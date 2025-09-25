@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmetics Product Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 8px 0;
+    }
+
+    .price {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #e91e63;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Cosmetics Collection</header>
+
+  <div class="container">
+    <!-- Product 1 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555050455-f96634b5cba6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGlwc3RpY2tzfGVufDB8fDB8fHww" alt="Lipstick">
+      <div class="card-content">
+        <h3>Matte Lipstick</h3>
+        <p>Long-lasting matte finish lipstick available in multiple shades.</p>
+        <p class="price">$15.99</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1557205465-f3762edea6d3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm91bmRhdGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Foundation">
+      <div class="card-content">
+        <h3>Liquid Foundation</h3>
+        <p>Smooth coverage with SPF protection for all skin types.</p>
+        <p class="price">$24.50</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1622910076411-b126ff7e469b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZhY2UlMjBjcmVhbXxlbnwwfHwwfHx8MA%3D%3D" alt="Face Cream">
+      <div class="card-content">
+        <h3>Hydrating Face Cream</h3>
+        <p>Moisturizer enriched with natural ingredients for glowing skin.</p>
+        <p class="price">$18.75</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyZnVtZXxlbnwwfHwwfHx8MA%3D%3D" alt="Perfume">
+      <div class="card-content">
+        <h3>Floral Perfume</h3>
+        <p>A refreshing floral fragrance perfect for everyday wear.</p>
+        <p class="price">$29.99</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
