@@ -16,11 +16,12 @@ This project demonstrates how to host a static website using **Amazon S3**. It i
 ## Deployment Steps
 
 1. Log in to your AWS account.
-2. Create a new S3 bucket (bucket name must be globally unique).
+2. Create a new IAM user with full access of S3 bucket (bucket name must be globally unique).
 3. Enable **Static Website Hosting** in the bucket properties.
-4. Upload your website files (`index.html`, `styles.css`) to the bucket.
+4. Upload your website files (`index.html`) to the bucket.
 5. Set the bucket policy or object permissions to **public read**.
-6. Access your website via the provided S3 endpoint URL.
+6. Genrate a policy (get policy).
+7. Access your website via the provided S3 endpoint URL.
 
 ## Notes
 
